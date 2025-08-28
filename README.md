@@ -6,7 +6,7 @@
 This repository contains the code, datasets, and analysis for the dissertation:  
 **“Understanding Social Media Addiction: Comparing Self-Reported and Behaviourally Calculated Addiction Levels.”**  
 
-The study investigates social media usage patterns, identifies behavioral predictors of addiction, and compares self-reported versus behaviorally calculated addiction scores among university students. Insights aim to support digital well-being initiatives and interventions.
+The study investigates social media usage patterns, identifies behavioral predictors of addiction, and compares self-reported versus behaviorally calculated addiction scores. Insights aim to support digital well-being initiatives.
 
 
 ---
@@ -15,7 +15,7 @@ The study investigates social media usage patterns, identifies behavioral predic
 
 - **Source:** Kaggle   
 - **Type:** Synthetic, generated using NumPy and pandas to simulate real-world social media usage  
-- **Features:** Self-control, time spent, frequency, content genre, self-reported addiction  
+- **Features:** Age, Gender, Location, Income,Profession,Demographics,Platform,Total Time Spent,Video Category,Video Length,Time Spent On Video,Number of Videos Watched,Frequency,ProductivityLoss,Satisfaction ,Watch Reason,DeviceType,Watch Time,Self Control,Addiction Level, ConnectionType 
 - **Ethics:** Anonymized, no consent required, GDPR approval not applicable  
 
 > Synthetic data ensures privacy while accurately simulating real-world social media behavior.
@@ -30,27 +30,27 @@ The study investigates social media usage patterns, identifies behavioral predic
 
 2. **Machine Learning Models**
    - Random Forest and XGBoost for prediction  
-   - Hyperparameter tuning with GridSearchCV improved performance and reduced overfitting  
+   - Hyperparameter tuning with GridSearchCV
    - Key predictors: **self-control**, **satisfaction**, **productivity loss**  
 
-3. **Association Rule Mining**
+4. **Association Rule Mining**
    - Night-time usage linked to high addiction, morning users linked to low addiction  
-   - Patterns consistent in self-reported and behavioral metrics  
+   - Patterns consistent in self-reported and behavioural metrics  
 
-4. **Self-Reported vs Behavioral Addiction**
+5. **Self-Reported vs Behavioral Addiction**
    - Participants often underestimated their addiction  
-   - Highlights the importance of objective monitoring  
+   - Highlights the importance of monitoring  
 
 ---
 
 ## Visualizations
 
-- Addiction by content genre  
-- Average addiction by location and platform  
-- Behavioral patterns over time  
-- Feature importance plots  
-
-*(See the `plots/` folder for details.)*
+- Model improvement after Hyperparameter tuning
+- Feature Importance By gain in XG Boost model
+- Comparison of two models before tuning 
+- Feature importance plots
+- Addiction score by genre
+- Average addiction level by location 
 
 ---
 
